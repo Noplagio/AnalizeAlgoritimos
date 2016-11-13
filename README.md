@@ -1,5 +1,8 @@
 PROJETO DESTINADO A ANALIZE DE ALGORITIMOS
 
-Desenvolvimento dos algoritimos.
+Algoritimos já desenvolvidos:
+
+ - Fibonacci
+ - Fatorial
 
 Desenvolvedores: Eduardo, VIctor
