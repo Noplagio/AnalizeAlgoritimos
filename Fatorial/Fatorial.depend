@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1479063048 source:/home/eduardo/Área de Trabalho/teste/AnalizeAlgoritimos/AnalizeAlgoritimos/Fatorial/main.cpp
+	<iostream>
+	"func_fatorial.h"
+
+1479062587 /home/eduardo/Área de Trabalho/teste/AnalizeAlgoritimos/AnalizeAlgoritimos/Fatorial/func_fatorial.h
+	<iostream>
+

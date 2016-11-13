@@ -14,15 +14,23 @@ using namespace std;
 func_fatorial f;
 
 void menu(){
+    cout<<"PARA SAIR BASTA DIGITAR 0"<<endl;
     cout<<"Informe um numero para calcular o fatorial:";
 }
 
 int main(){
 
     int numero;
-    menu();
-    cin>>numero;
+    while(numero > 0){
+        menu();
+        cin>>numero;
+        if(numero > 0){
+            f.calcular_fatorial(numero);
+        }
+        else{
+            cout<<"Saindo!!"<<endl;
+        }
 
-    f.calcular_fatorial(numero);
+    }
 
 }

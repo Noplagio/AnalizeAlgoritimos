@@ -20,4 +20,10 @@ func_fatorial:: ~func_fatorial(){
 
 void func_fatorial::calcular_fatorial(int numero){
 
+    int resultado = 1;
+    while (numero != 1){
+        resultado = resultado*numero;
+        numero--;
+    }
+    cout<<resultado<<endl;
 }
