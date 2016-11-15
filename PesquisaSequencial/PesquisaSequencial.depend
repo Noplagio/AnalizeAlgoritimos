@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1479171101 source:/home/eduardo/Área de Trabalho/teste/AnalizeAlgoritimos/AnalizeAlgoritimos/PesquisaSequencial/main.cpp
+	<iostream>
+	"func_binaria.h"
+	"func_sequencial.h"
+
+1479171497 /home/eduardo/Área de Trabalho/teste/AnalizeAlgoritimos/AnalizeAlgoritimos/PesquisaSequencial/func_binaria.h
+	<iostream>
+
+1479170065 /home/eduardo/Área de Trabalho/teste/AnalizeAlgoritimos/AnalizeAlgoritimos/PesquisaSequencial/func_sequencial.h
+	<iostream>
+
