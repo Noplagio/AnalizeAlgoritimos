@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1479238714 source:/home/eduardo/Área de Trabalho/teste/AnalizeAlgoritimos/AnalizeAlgoritimos/megesort/main.cpp
+	<iostream>
+	"func_merge.h"
+	<cstdlib>
+
+1479238642 /home/eduardo/Área de Trabalho/teste/AnalizeAlgoritimos/AnalizeAlgoritimos/megesort/func_merge.h
+	<iostream>
+
