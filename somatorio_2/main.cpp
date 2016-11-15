@@ -32,4 +32,6 @@ int main()
 
     calcula(j, n);
 
+    return 0;
+
 }
