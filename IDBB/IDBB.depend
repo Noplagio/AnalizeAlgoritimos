@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1479244594 source:/home/emerson/Área de Trabalho/idbb/IDBB/main.cpp
+	<iostream>
+	<stdio.h>
+	<memory.h>
+	<stdlib.h>
+
+1479244794 source:/home/eduardo/Área de Trabalho/teste/AnalizeAlgoritimos/AnalizeAlgoritimos/IDBB/main.cpp
+	<iostream>
+	<stdio.h>
+	<memory.h>
+	<stdlib.h>
+
