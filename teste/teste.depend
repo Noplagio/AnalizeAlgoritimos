@@ -1,8 +1,7 @@
 # depslib dependency file v1.0
-1479241553 source:/home/eduardo/Área de Trabalho/teste/AnalizeAlgoritimos/AnalizeAlgoritimos/teste/main.cpp
-	<iostream>
+1479245893 source:/home/eduardo/Área de Trabalho/teste/AnalizeAlgoritimos/AnalizeAlgoritimos/teste/main.cpp
+	<cstdio>
 	<cstdlib>
-	"func_buble.h"
 
 1479242146 /home/eduardo/Área de Trabalho/teste/AnalizeAlgoritimos/AnalizeAlgoritimos/teste/func_buble.h
 	<iostream>
