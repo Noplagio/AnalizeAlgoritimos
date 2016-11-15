@@ -1,35 +1,53 @@
-/*
- *DESENVOLVIMENTO DO ALGORITIMO QUE CALCULA O FATORIAL DE UM NUMERO
- * Academicos: Eduardo Spillere Anzolin e Victor Pavei Goes;
- * Data: 13/11/2016
- * Universidade do extremo sul catarinense;
-*/
-
 #include <iostream>
-#include "func_fatorial.h"
-
+#include <cstdlib>
+#include "func_buble.h"
 
 using namespace std;
 
-func_bubleSort f;
+#define tam 100
+int main()
+{
+    int v[tam], quant, op, i;
 
-void menu(){
-    cout<<"======MENU======="<<endl;
-    cout<<"0-Sair"<<endl;
-    cout<<"1-Entrada do teclado:"<<endl;
-    cout<<"2-Entrada aleatoria:"<<endl;
-}
 
-int main(){
+    cout << "Programa para realizar ordenacao Bubblesort" << endl;
+    do {
+        cout << "Quanto valores deseja ordenar: ";
+        cin >> quant;
 
-    int op = -1;
-    cin>>op;
-    while(op != 0){
-        switch(op){
-            case 1:
+    } while (quant < 1 || quant > tam);
 
+    cout << "Menu de opcoes" << endl;
+    cout << "1 - Ascendente" << endl;
+    cout << "2 - Descendente" << endl;
+    cout << "3 - Aleatorio" << endl;
+    do {
+        cout << "Qual distribuicao de probabilidade: ";
+        cin >> op;
+    } while (op < 1 || op > 3);
+
+    switch (op) {
+    case 1 :
+        for (i=0; i < quant; i++){
+            v[i] = i;
         }
+        ordena_bubble(quant, v);
+        break;
+    case 2 :
+        for (i=0; i < quant; i++){
+            v[i] = quant - i;
+            }
+            ordena_bubble(quant, v);
+        break;
+    case 3 :
+        for (i=0; i < tam; i++){
+            v[i] = rand() % 1000;
+            }
+            ordena_bubble(quant, v);
+        break;
+
     }
 
+return 0;
 }
 
