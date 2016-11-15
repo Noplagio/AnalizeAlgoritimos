@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1479240237 source:/home/eduardo/Área de Trabalho/teste/AnalizeAlgoritimos/AnalizeAlgoritimos/shelsort/main.cpp
+	<iostream>
+	"func_shel.h"
+	<cstdlib>
+
+1479240165 /home/eduardo/Área de Trabalho/teste/AnalizeAlgoritimos/AnalizeAlgoritimos/shelsort/func_shel.h
+	<iostream>
+
