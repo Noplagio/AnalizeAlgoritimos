@@ -36,7 +36,7 @@ void menu(){
 
 int main(){
 
-    int op = -1;
+    int op = -1, inicial = 0, fim = 10;
     menu();
     cin>>op;
     while(op != 0){
@@ -44,14 +44,16 @@ int main(){
             case 1:
             cout<<"Entrada normal selecionada!!"<<endl;
             carrega_vetor_crescente();
-            a.orderna(vetor);
+            a.orderna(vetor, inicial, fim);
+            a.imprimi();
             menu();
             cin>>op;
             break;
             case 2:
             cout<<"Entrada aleatoria selecionada!!"<<endl;
             carrega_aleatorio();
-            a.orderna(vetor);
+            a.orderna(vetor, inicial, fim);
+            a.imprimi();
             menu();
             cin>>op;
             break;
