@@ -1,28 +1,36 @@
+/*
+ *FUNÇÃO DESENVOLVIDA POR EDUARDO SPILLERE ANZOLIN E VICTOR PAVEI GOES
+ *CODIGO: DE SOMATORIO 03
+ *DATA: 15/11/2016
+ *LOCAL: Unesc - sc
+*/
 #include <iostream>
 #include <math.h>
 
 using namespace std;
 
+int calcula_fatorial(int numero){
+    int resultado=1;
+    while (numero != 1){
+            resultado = resultado*numero;
+            numero--;
+        }
+}
 
-
-void calcula(int n){
+void calcula(int x){
     int soma = 0;
-    int re;
+    double re;
     int resul = 1;
-    for(int i=1; i<= n; i++)
-    {
-        re = pow(-1,n)*pow(n,2*n)/(2*n);
-        while (re != 1){
-        resul = resul*re;
-        re--;
+    double resposta;
+    for(int i=1; i<= x; i++){
+
+        re = (1-(pow(x, i)/calcula_fatorial(i)));
+        resposta = cos(re);
     }
 
-    soma = soma + resul;
-
-    }
-
-    cout << "O coseno é: " << endl;
-    cout << soma;
+    cout << "O coseno é de "<< re <<" é: ";
+    cout << resposta;
+    cout<<"\n";
 
 }
 
@@ -30,13 +38,12 @@ void calcula(int n){
 int main()
 {
 
-    int n;
+    int x=0;
 
     cout << "Digite quantos termos usar: " << endl;
-    cin >> n;
+    cin>>x;
 
-    calcula(n);
+    calcula(x);
 
-    return 0;
 
 }
