@@ -2,22 +2,18 @@
 
 using namespace std;
 
-void calcula(int j, int n){
-    int indice=0, um =1, soma1=0, soma2=0;
-    long fim, resultado;
+void calcula(float j, int n){
+    int indice=0;
+    long resultado;
     while(indice != n){
-        soma1 = j+1;
-        soma2 = j+2;
 
-        resultado = j*(soma1*soma2);
-
-        fim = 1/resultado;
+        resultado = (resultado + (1 / (j * (j + 1) * (j + 2))));
 
         indice++;
 
     }
 
-    cout<<"Somatorio:"<<fim<<endl;
+    cout<<"Somatorio:"<<resultado<<endl;
 
 }
 
@@ -25,13 +21,12 @@ void calcula(int j, int n){
 int main()
 {
 
-    int j=-1, n;
+    float j=-1, n;
 
     cout<<"INFORME A QUANTIDADE DE VESES QUE SERA EXECUTADO:"<<endl;
     cin>>n;
 
     calcula(j, n);
 
-    return 0;
 
 }
