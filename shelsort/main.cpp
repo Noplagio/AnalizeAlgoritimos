@@ -1,8 +1,8 @@
 /*
- *DESENVOLVIMENTO DO ALGORITIMO QUE ORDENA MERGESORT
- * Academicos: Eduardo Spillere Anzolin e Victor Pavei Goes;
- * Data: 13/11/2016
- * Universidade do extremo sul catarinense;
+ *FUNÇÃO DESENVOLVIDA POR EDUARDO SPILLERE ANZOLIN E VICTOR PAVEI GOES
+ *CODIGO: DE SHELSORT
+ *DATA: 15/11/2016
+ *LOCAL: Unesc - sc
 */
 
 #include <iostream>

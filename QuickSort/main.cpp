@@ -1,3 +1,9 @@
+/*
+ *FUNÇÃO DESENVOLVIDA POR EDUARDO SPILLERE ANZOLIN E VICTOR PAVEI GOES
+ *CODIGO: DE QUICK SORT
+ *DATA: 15/11/2016
+ *LOCAL: Unesc - sc
+*/
 #include <iostream>
 #include <cstdlib>
 

@@ -1,3 +1,9 @@
+/*
+ *FUNÇÃO DESENVOLVIDA POR EDUARDO SPILLERE ANZOLIN E VICTOR PAVEI GOES
+ *CODIGO: DE SEQUENCIA SOMATORIA
+ *DATA: 15/11/2016
+ *LOCAL: Unesc - sc
+*/
 #include <iostream>
 
 using namespace std;
