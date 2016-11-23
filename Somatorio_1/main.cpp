@@ -16,9 +16,10 @@ void encontra_fracao(float aux){
 void calcula_sequencia(){
     float valor_inicial = 16;
     for(int i=0;i<2000;i++){
+        vetor[i]=valor_inicial;
         float resultado=valor_inicial/2;
-        vetor[i]=resultado;
-        valor_inicial = vetor[i];
+        vetor[i+1]=resultado;
+        valor_inicial = vetor[i+1];
 
             if(vetor[i] < 0){
                 float aux = vetor[i];
@@ -26,7 +27,7 @@ void calcula_sequencia(){
             }
 
     }
-    for(int i=0;i<100;i++){
+    for(int i=0;i<2000;i++){
         cout<<vetor[i]<<endl;
     }
 }
@@ -40,5 +41,7 @@ int main(){
     if(op == 1){
         calcula_sequencia();
     }
+
+    return 0;
 
 }
