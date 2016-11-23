@@ -1,3 +1,10 @@
+/*
+ *DESENVOLVIMENTO DO ALGORITIMO QUE ORGANIZA OS VALORES PELO METODO BBUBBLE SORT
+ * Academicos: Eduardo Spillere Anzolin e Victor Pavei Goes;
+ * Data: 13/11/2016
+ * Universidade do extremo sul catarinense;
+*/
+
 #include <iostream>
 #include <cstdlib>
 #include "func_buble.h"

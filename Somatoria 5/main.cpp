@@ -1,3 +1,10 @@
+/*
+ *FUNÇÃO DESENVOLVIDA POR EDUARDO SPILLERE ANZOLIN E VICTOR PAVEI GOES
+ *CODIGO: DE SOMATORIO 05
+ *DATA: 15/11/2016
+ *LOCAL: Unesc - sc
+*/
+
 #include <iostream>
 
 using namespace std;
