@@ -1,8 +1,7 @@
 # depslib dependency file v1.0
-1480618642 source:c:\users\eduardo\documents\github\analizealgoritimos\ler_txt\main.cpp
+1480620886 source:c:\users\eduardo\documents\github\analizealgoritimos\ler_txt\main.cpp
 	<iostream>
-	"func_arquivo.h"
-	"func_vetor.h"
+	<fstream>
 
 1480619324 c:\users\eduardo\documents\github\analizealgoritimos\ler_txt\func_arquivo.h
 	<iostream>
