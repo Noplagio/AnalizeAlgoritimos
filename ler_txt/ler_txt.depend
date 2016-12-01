@@ -4,7 +4,7 @@
 	"func_arquivo.h"
 	"func_vetor.h"
 
-1480619115 c:\users\eduardo\documents\github\analizealgoritimos\ler_txt\func_arquivo.h
+1480619324 c:\users\eduardo\documents\github\analizealgoritimos\ler_txt\func_arquivo.h
 	<iostream>
 	<sstream>
 	<fstream>
