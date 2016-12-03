@@ -21,36 +21,48 @@ void carrega_dados(){
                     }
                     arq.close();
                 }
-
 }
 
+
+//FUNCAO QUE REALIZA LEITURA DOS DADOS
 void carrega_dados_c(){
-    FILE*auxilio=NULL;
     int i=0;
-    char nuks[80];
-    char nomes[27060][80];
+    char nuks[80], nomes[27060][80], aux[80];
     FILE*arquivo;
+    //ABRINDO ARQUIVO
     arquivo = fopen("nomes2016_2.txt", "r");
+    //VARRENDO ATE O FINAL E COLOCANDO NO VETOR
     while(!feof(arquivo)){
         fgets(nuks, 79, arquivo);
-        strncpy ( nomes[i], nuks, 80);
+        strncpy (nomes[i], nuks, 80); //passando dados para array
         i++;
-
     }
+    //funcao que coloca em ordem alfabetica
+    for(int i=0; i<27060; i++) {
+        for(int j=0; j<27060; j++) {
+            if(strcmp(nomes[i], nomes[j]) < 0) {
+                strcpy(aux, nomes[i]);
+                strcpy(nomes[i], nomes[j]);
+                strcpy(nomes[j], aux);
+            }
+        }
+    }
+    //exibindo em tela
     for(int i=0;i<27060;i++){
         cout<<nomes[i]<<endl;
     }
 
-}
 
+
+}
+//FUNCAO QUE IMPRIME O MENU
 int menu(){
     cout<<"Juntando oque precisamos!!"<<endl;
-    cout<<"Em breve teremos o array completo carregado!!"<<endl;
+    cout<<"Aguarde::contando dados, e ordenando..."<<endl;
 }
-
+//FUNCAO MAIN PRINCIPAL
 int main(){
     menu();
-    //carrega_dados();
     carrega_dados_c();
     return 0;
 }
