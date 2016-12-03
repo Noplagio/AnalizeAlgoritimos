@@ -24,13 +24,20 @@ void carrega_dados(){
 }
 
 void carrega_dados_c(){
+    FILE*auxilio=NULL;
     char nuks[80];
+    string nomes[27060];
     FILE*arquivo;
     arquivo = fopen("nomes2016_2.txt", "r");
     while(!feof(arquivo)){
-    fgets(nuks, 79, arquivo);
-    printf("%s\n",nuks);
+
+        fgets(nuks, 79, arquivo);
+        printf("%s\n",nuks);
     }
+
+    /*for(int i=0;i<27060;i++){
+        cout<<nomes[i]<<endl;
+    }*/
 
 }
 
