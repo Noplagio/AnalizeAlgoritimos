@@ -1,5 +1,6 @@
 #include <iostream>
 #include <fstream>
+#include <string.h>
 
 using namespace std;
 
@@ -25,19 +26,20 @@ void carrega_dados(){
 
 void carrega_dados_c(){
     FILE*auxilio=NULL;
+    int i=0;
     char nuks[80];
-    string nomes[27060];
+    char nomes[27060][80];
     FILE*arquivo;
     arquivo = fopen("nomes2016_2.txt", "r");
     while(!feof(arquivo)){
-
         fgets(nuks, 79, arquivo);
-        printf("%s\n",nuks);
-    }
+        strncpy ( nomes[i], nuks, 80);
+        i++;
 
-    /*for(int i=0;i<27060;i++){
+    }
+    for(int i=0;i<27060;i++){
         cout<<nomes[i]<<endl;
-    }*/
+    }
 
 }
 
