@@ -1,7 +1,6 @@
 <strong>PROJETO DESTINADO A ANALIZE DE ALGORITIMOS</strong>
-
-Desenvolvendo algoritimos, para soluções simples
-de funçoes de somatorio, busca binaria, recursividade, 
-dentre outras;
-
-Desenvolvedores: Eduardo, VIctor - Data 23/11/2016
+<hr>
+<h4 align="justify">Projeto de desenvolvimento de algoritimos, simples, para resolução
+de trabalhos academicos, destinados a materia de analize de algoritimos.<h4>
+<hr>
+<h6>Desenvolvedores: Eduardo, Victor - Data da ultima modificação - 03/12/2016</h6>

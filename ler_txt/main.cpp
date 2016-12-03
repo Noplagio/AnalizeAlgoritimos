@@ -1,3 +1,15 @@
+/*
+*
+*ALGORITIMO CAPAZ DE LER OS DADOS DE UM TXT DE ORIGEM,
+*ORDENALOS EM UM ARRAY E ESCREVER NOVAMENTE OS DADOS
+*ORDENADOS EM OUTRO ARQUIVO TXT
+*
+* Desenvolvedores: Eduardo Spillere Anzolin, Victor Pavei Goes.
+* Data:03/12/2016
+* Local: UNESC - SC
+*
+*/
+
 #include <iostream>
 #include <fstream>
 #include <string.h>
@@ -5,29 +17,10 @@
 using namespace std;
 
 
-void carrega_dados(){
-    ifstream arq;
-    string nome;
-    arq.open("nomes2016_2.txt", ios::in);
-
-     if(arq.fail() == 1){
-                    cout<<"Arquivo inexistente!! erro fatal!!";
-                }
-                else{
-                    while(!arq.eof()){
-                        arq >> nome;
-                        cout<<nome<<endl;
-
-                    }
-                    arq.close();
-                }
-}
-
-
 //FUNCAO QUE REALIZA LEITURA DOS DADOS
 void carrega_dados_c(){
     int i=0;
-    char nuks[80], nomes[27060][80], aux[80];
+    char nuks[20], nomes[27060][80], aux[80];
     FILE*arquivo;
     //ABRINDO ARQUIVO
     arquivo = fopen("nomes2016_2.txt", "r");
@@ -51,14 +44,20 @@ void carrega_dados_c(){
     for(int i=0;i<27060;i++){
         cout<<nomes[i]<<endl;
     }
-
-
+    //escrevendo ordenado dentro de outro arquivo
+    ofstream arq;
+    arq.open("ordenado.txt", ios::app);
+    for(int i=0;i<27060;i++){
+        arq << nomes[i];
+    }
+    cout<<"Pronto verifique os dados ordenados no novo arquivo gerado!!"<<endl;
+    cout<<"OBS: Em alguns editores de texto, o padrao utf-8 pode apresentar alguns bugs relacionados aos ascentos"<<endl;
 
 }
 //FUNCAO QUE IMPRIME O MENU
 int menu(){
     cout<<"Juntando oque precisamos!!"<<endl;
-    cout<<"Aguarde::contando dados, e ordenando..."<<endl;
+    cout<<"Aguarde::contando dados, e ordenando...isso pode demorar"<<endl;
 }
 //FUNCAO MAIN PRINCIPAL
 int main(){
